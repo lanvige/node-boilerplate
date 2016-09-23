@@ -1,8 +1,10 @@
 
+// In dev-mode, we use babel-register.
+// In prod-mode, the files have already been transpiled.
 require("babel-core/register")({
-  presets: ['es2015-node6', 'stage-3']
-});
-
+    presets: ["es2017"],
+    plugins: ["transform-es2015-modules-commonjs"]
+  });
 
 require("./src/index.js");
 
