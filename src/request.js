@@ -16,7 +16,6 @@ const req = async() => {
   console.log(content);
 }
 
-
 export default req;
 
 
