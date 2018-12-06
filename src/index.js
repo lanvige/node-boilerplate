@@ -23,8 +23,8 @@
 // ============================
 // sleep demo
 
-import start from './sleep.js';
-start();
+// import start from './sleep.js';
+// start();
 
 
 
@@ -33,8 +33,8 @@ start();
 // ============================
 // request demo
 
-// import abc from './request.js';
-// abc();
+import abc from './request.js';
+abc();
 
 
 // import exec from './mysql-hssubtask-score.js'
