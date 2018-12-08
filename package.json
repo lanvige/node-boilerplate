@@ -7,12 +7,14 @@
     "start": "node index",
     "start1": "node_modules/.bin/babel-node src/index.js",
     "start2": "node_modules/.bin/babel-node src/request.js",
+    "server": "node_modules/.bin/babel-node src/koaserver.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
     "commander": "^2.9.0",
+    "koa": "^2.6.2",
     "mysql-promise": "^4.1.0",
     "node-mysql-promise": "0.0.6",
     "promise-mysql": "^3.0.0",
