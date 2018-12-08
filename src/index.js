@@ -33,10 +33,10 @@
 // ============================
 // request demo
 
-// import abc from './request.js';
-// abc();
+import abc from './request.js';
+abc();
 
 
-import exec from './mysql-hssubtask-score.js'
-exec();
+// import exec from './mysql-hssubtask-score.js'
+// exec();
 

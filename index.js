@@ -1,4 +1,5 @@
 
+
 // In dev-mode, we use babel-register.
 // In prod-mode, the files have already been transpiled.
 require("babel-core/register")({
@@ -8,22 +9,16 @@ require("babel-core/register")({
 
 require("./src/index.js");
 
+// In dev-mode, we use babel-register.
+// In prod-mode, the files have already been transpiled.
+
+// 使用这个配置后，就不需要 .babelrc 文件了
+
+require("@babel/register")({
+  presets: [[
+    "@babel/preset-env", { targets: { node: "10.4.1" }}]
+  ]
+});
 
 
-
-// var program = require('commander');
-
-// program
-//   .version('0.0.1')
-//   .option('-p, --peppers', 'Add peppers')
-//   .option('-P, --pineapple', 'Add pineapple')
-//   .option('-b, --bbq-sauce', 'Add bbq sauce')
-//   .option('-c, --cheese [type]', 'Add the specified type of cheese [marble]', 'marble')
-//   .parse(process.argv);
-
-// console.log('you ordered a pizza with:');
-// if (program.peppers) console.log('  - peppers');
-// if (program.pineapple) console.log('  - pineapple');
-// if (program.bbqSauce) console.log('  - bbq');
-// console.log('  - %s cheese', program.cheese);
-
+require("./src/index.js");

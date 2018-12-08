@@ -1,21 +1,24 @@
 # Node ES7 boilerplate
 
-经常有些小的需求，以前都是用 ruby，现在想用 node 来实现，就是一些同步的小方法集。
+经常有些小的需求写一些脚本，以前都是用 ruby，现在改用 node 来实现，都是一些同步的小方法集。
 
-但 js 的 callback hell 很讨厌，想用 es7 的 async 来解决。这里是一个例子。
+但 js 的 callback hell 很讨厌，这里用 ES 2017 的 Async Function 来解决。这里是一个例子。
+
+**依赖 Node 7.6.0+**
 
 
-## ES7 - async/await & import
+## ES 2017 - Async functions & import
 
 
-async 表示这是一个async函数，await只能用在这个函数里面。
+#### Async functions
+
+async 表示这是一个async 函数，await 只能用在这个函数里面。
 
 await 表示在这里等待 promise 返回结果了，再继续执行。
 
-#### promise
-
-
 #### import / export
+
+这是 ES 2015 中定义的 ES Moduel，目前仍未被原生支持，也正是这一点，需要引入 Babel。但并不妨碍我们去使用它：
 
 ```
 # 命名导出
@@ -45,11 +48,10 @@ import asyncRedis from '../../lib/async-redis'
 asyncRedis.setCache(key, extensive);
 ```
 
-### Babel
+
+## Babel
 
 entry.js 中是不能使用新语法的。一定要定义在另一个新文件中。
-
-
 
 - [Babel 入门教程](http://www.ruanyifeng.com/blog/2016/01/babel.html)
 
@@ -59,14 +61,15 @@ Node@6 has great ES2015 support, this module just adds missing features:
 - <https://github.com/jhen0409/babel-preset-es2015-node6>
 
 
+## 其它的依赖：
 
-## HTTP Request
+### HTTP Request
 
 https://github.com/request/request-promise
 
 
 
-## MySQL
+### MySQL
 
 - <https://github.com/mysqljs/mysql/>
 
